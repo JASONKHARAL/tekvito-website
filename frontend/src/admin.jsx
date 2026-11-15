@@ -41,7 +41,7 @@ const jobSeekerCount = enquiries.filter(
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/admin/login",
+        "/api/login.php",
         {
           method: "POST",
           headers: {
@@ -68,7 +68,7 @@ const jobSeekerCount = enquiries.filter(
 
   async function loadEnquiries(authToken) {
     const response = await fetch(
-      "http://localhost:5000/api/admin/enquiries",
+      "/api/admin/enquiries.php",
       {
         headers: {
           Authorization: `Bearer ${authToken}`

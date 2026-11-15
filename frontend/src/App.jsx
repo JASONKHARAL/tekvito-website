@@ -19,7 +19,7 @@ const handleSubmit = async (e) => {
   setStatus("");
 
   try {
-    const response = await fetch("http://localhost:5000/api/enquiries", {
+    const response = await fetch("/api/enquiries.php", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
