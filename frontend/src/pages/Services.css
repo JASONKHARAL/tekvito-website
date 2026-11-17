@@ -1,0 +1,144 @@
+
+.services-page {
+  color: #172b4d;
+  background: #fff;
+}
+
+/* Hero */
+.services-hero {
+  padding: 110px 9%;
+  background: #f5f8fc;
+}
+
+.services-eyebrow {
+  display: inline-block;
+  color: #4776e6;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.services-hero h1 {
+  max-width: 900px;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1.1;
+  letter-spacing: -3px;
+  margin: 0 0 25px;
+}
+
+.services-hero h1 span {
+  color: #4776e6;
+}
+
+.services-hero p {
+  max-width: 650px;
+  color: #66758a;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+/* Services list */
+.services-list {
+  padding: 100px 9%;
+}
+
+.services-heading {
+  max-width: 650px;
+  margin-bottom: 45px;
+}
+
+.services-heading h2,
+.screening-section h2 {
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.2;
+  letter-spacing: -1.5px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+.service-item {
+  padding: 35px;
+  border: 1px solid #e8edf4;
+  border-radius: 16px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(20, 40, 80, 0.08);
+}
+
+.service-number {
+  color: #4776e6;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.service-item h3 {
+  font-size: 23px;
+  line-height: 1.35;
+  margin: 22px 0 12px;
+}
+
+.service-item p {
+  color: #66758a;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Background screening */
+.screening-section {
+  padding: 90px 9%;
+  background: #f5f8fc;
+}
+
+.screening-section h2 {
+  max-width: 700px;
+}
+
+.screening-section > p {
+  max-width: 720px;
+  color: #66758a;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.screening-section ul {
+  padding-left: 22px;
+  color: #34445c;
+  line-height: 2.2;
+}
+
+.screening-note {
+  font-size: 13px !important;
+  margin-top: 25px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 75px 7%;
+  }
+
+  .services-hero h1 {
+    letter-spacing: -1.5px;
+  }
+
+  .services-list,
+  .screening-section {
+    padding: 65px 7%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-item {
+    padding: 28px;
+  }
+}
